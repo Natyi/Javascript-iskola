@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     <script>
         function terulet(r) {
-            return math.pow(r,2)*Math.PI;
+            return Math.pow(r,2)*Math.PI;
 
         }
         
@@ -18,16 +16,33 @@
 
              return 2*r*Math.PI
         }
+
+        
+        function Szamol() 
+        {
+            alert("szamol");
+
+        }
+        
        
-        document.write("Kerület: " + kerulet(5));
-        document.write("Terület: " + terulet(5));
-
-
-
-
-
 
 
     </script>
+</head>
+<body >
+   <p>
+     A kör sugara:  
+    <input type="number" min=0 max="100 " id="sugar" > 
+    
+
+   </p>
+
+   <p>
+       <input type="button" value="Számol" onclick="Szamol()">
+
+
+   </p>
+
+    
 </body>
 </html>
