@@ -29,6 +29,14 @@
 
 
         }
+
+        function kalkulal() {
+            var sugarertek = document.getElementById("csuszka").value;
+            document.getElementById("ertek").innerHTML=sugarertek;
+
+
+
+        }
         
        
 
@@ -52,6 +60,16 @@
 
    <h1><div id="terulet"></div></h1>
    <h1><div id="kerulet"></div></h1>
+
+
+    <hr>
+    <p>   
+    <input id="csuszka" type="range" min="0" max="10" step="1" onchange="kalkulal()">
+    <span id="ertek"></span>
+    </p>
+
+
+
 
     
 </body>
