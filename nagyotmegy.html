@@ -7,20 +7,26 @@
     <title>Document</title>
     <script>
         function terulet(r) {
-            return Math.pow(r,2)*Math.PI;
-
+            return  Math.round(Math.pow(r,2)*Math.PI);
+            
+        
         }
         
         
         function kerulet(r){
 
-             return 2*r*Math.PI
+             return Math.round(2*r*Math.PI)
         }
 
         
         function Szamol() 
         {
-            alert("szamol");
+            var r = document.getElementById("sugar").value;
+
+            document.getElementById("kerulet").innerHTML="K= "+ kerulet(r);
+            document.getElementById("terulet").innerHTML="T= "+ terulet(r);
+
+
 
         }
         
@@ -42,6 +48,10 @@
 
 
    </p>
+
+
+   <h1><div id="terulet"></div></h1>
+   <h1><div id="kerulet"></div></h1>
 
     
 </body>
