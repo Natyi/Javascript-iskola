@@ -34,6 +34,9 @@
             var sugarertek = document.getElementById("csuszka").value;
             document.getElementById("ertek").innerHTML=sugarertek;
 
+            document.getElementById("ker").innerHTML="K= "+ kerulet(sugarertek);
+            document.getElementById("ter").innerHTML="T= "+ terulet(sugarertek);
+
 
 
         }
@@ -67,6 +70,9 @@
     <input id="csuszka" type="range" min="0" max="10" step="1" onchange="kalkulal()">
     <span id="ertek"></span>
     </p>
+
+    <h1><div id="ker"></div></h1>
+    <h1><div id="ter"></div></h1>
 
 
 
