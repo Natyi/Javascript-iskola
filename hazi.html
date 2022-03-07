@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Házi</title>
+</head>
+<body>
+    <script>
+
+       
+
+       function kerulet(a, b, c) 
+        {
+           return Math.round(parseInt(a)+ parseInt(b)+ parseInt(c));
+
+
+
+
+        }
+
+        function s(kerulet) 
+        {
+            return  Math.round(kerulet/2);
+
+
+
+
+
+        }
+
+        function terulet(s, a, b, c) 
+        {
+
+            return Math.round(Math.sqrt(s*(s-a)*(s-b)*(s-c)));
+            
+
+
+
+        }
+        
+
+       function Szamol() 
+       {
+
+       var a =  document.getElementById("a").value;
+       var b =  document.getElementById("b").value;
+       var c =  document.getElementById("c").value;
+
+       
+      
+
+       
+           
+        
+          
+          document.getElementById("kerulet").innerHTML="K= "+ kerulet(a, b, c);
+          document.getElementById("sertek").innerHTML="s= "+ s(kerulet(a, b, c));
+          document.getElementById("Teljesterulet").innerHTML="T= "+ terulet(s(kerulet(a,b,c)), a, b, c);
+
+       }
+
+
+
+       
+
+
+       
+
+
+
+
+
+
+
+
+    </script>
+
+
+<p>
+    Kérem az a oldal hosszát: 
+   <input type="number" min=0 max="100 " id="a" >
+
+   Kérem a b oldal hosszát: 
+   <input type="number" min=0 max="100 " id="b" >
+
+   Kérem a c oldal hosszát: 
+   <input type="number" min=0 max="100 " id="c" >
+
+   <p>
+    <input type="button" value="Számol" onclick="Szamol()">
+   </p>
+   <h1><div id="kerulet"></div></h1>
+    <h1><div id="sertek"></div></h1>
+    <h1><div id="Teljesterulet"></div></h1>
+
+
+  </p>
+    
+</body>
+</html>
